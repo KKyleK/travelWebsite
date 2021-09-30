@@ -99,8 +99,7 @@ h2{
 #bottom{
     
     /* Background color around images */
-    /* background-color:#f7b14f; */
-    background-color:black;
+    background-color:#f7b14f;
 }
 /* Div that directly contains the photos */
 #photos{
