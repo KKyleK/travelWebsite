@@ -1,0 +1,201 @@
+/* TODO: Veriables, proper citation for positioning */
+/* FONT */
+
+
+
+
+#sub_page{
+    background-color:rgb(191, 222, 241);
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+#main{
+
+    padding-left:10%;
+}
+
+#main p{
+    padding-right:10%;
+}
+
+
+/* -------------------------MAIN PAGE------------------------- */
+/* sets default padding*/
+body{
+
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+/* The background image with texts */
+main{
+    background-image: url("images/florence.jpg");
+    
+    /* From https://www.w3schools.com/cssref/css3_pr_background-size.asp - Causes background to resize when window resized*/
+    background-size:cover;
+    height: 615px;
+
+}
+
+/* The nav bar and logo */
+header{
+
+/* From https://www.w3schools.com/css/css_positioning.asp - Position relative allows an element to be moved away from its normal flow */
+    position:relative;
+    bottom:20px;
+    /* Between bar and text */
+    margin-bottom:100px;
+}
+
+
+/* The individual nav elements */
+header a{
+    color:#51279B;
+    text-transform: uppercase;
+    font-weight:600;
+
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+/* Hover */
+header a:hover{
+    color:#8662C7;
+
+}
+/* The logo */
+header img{
+/* Bring logo down to sit inline */
+    position:relative;
+    top:20px;
+    padding-top:0%;
+}
+
+#details{
+
+    color:white;
+    padding-left: 8%;
+}
+
+h1{
+    font-size: 48px; 
+}
+h2{
+    font-size: 24px;
+}
+#details p a{
+    text-decoration: none;
+    background-color: #51279B;
+    color:white;
+    padding:1%;
+}
+
+#details p a:hover{
+    color:#8662C7;
+}
+
+#bottom{
+    
+    /* Background color around images */
+    background-color:#f7b14f;
+}
+/* Div that directly contains the photos */
+#photos{
+
+    /* Padding bottom and top give the nice border outline */
+    padding-bottom:20px;
+    padding-top:20px;
+
+  
+
+    /* From: https://stackoverflow.com/questions/4980525/css-center-display-inline-block User: Eda - Code allows the child divs to stay centered and resize */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* The photos */
+
+#bottom #photos .block{
+
+    display:inline-block;
+    margin-left: 5px; 
+    background-color: white; 
+}
+
+/* The text in the cards */
+h3{
+    font-size:14px;
+    padding-left:10px;
+}
+article p{
+    font-size: 12px;
+    padding-left:10px;
+}
+
+footer{
+    background-color: rgb(38, 39, 39);
+    padding-bottom: 50px;
+}
+
+/* Copyright text */
+footer p{
+
+    padding-top:30px;
+    margin-top: 0;
+   
+    color:white;
+    text-align: center;
+}
+
+/* Bottom links */
+p a{
+    color:#ff6961;
+    text-decoration: none;
+    margin-right:10px;
+}
+
+ 
+p a:hover{
+    color:orangered;
+}
+
+
+/* Comment and heart implemented as background images */
+#comment{
+
+    background-image: url("images/comment.png");
+    /* Dimensions */
+    padding-left:40px;
+    padding-bottom:40px;
+}
+#heart{ 
+
+    background-image: url("images/heart.png");
+    /* Dimensions */
+    padding-left:44px;
+    padding-bottom:40px;
+ }
+
+/* Shared info for both images*/
+article .icon{
+
+  display:inline-block;
+   
+  
+  margin-bottom: 0;
+  margin-left:10px;
+}
+
+/* The numbers */
+.num{
+    display:inline-block;
+    margin:0;
+    padding: 0;
+    /* Move them a bit up */
+    position:relative;
+    bottom:15px;
+}
